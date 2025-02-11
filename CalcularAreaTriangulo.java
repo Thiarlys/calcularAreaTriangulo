@@ -19,10 +19,8 @@ public class CalcularAreaTriangulo {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        double pX= (x.a + x.b + x.c) / 2;
-        double areaX = Math.sqrt(pX * (pX - x.a) * (pX - x.b) * (pX - x.c));
-        double pY= (y.a + y.b + y.c) / 2;
-        double areaY = Math.sqrt(pY * (pY - y.a) * (pY - y.b) * (pY - y.c));
+        double areaX = x.area(); // Usamos o .area para que o objeto chame o método que calcula a area e assim a variavel areaX receba o valor do calculo
+        double areaY = y.area();
         System.out.println("Area do triângulo X "+ areaX);
         System.out.println("Area do triângulo Y "+ areaY);
 
